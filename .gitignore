@@ -1,0 +1,17 @@
+.venv/
+build/
+install/
+log/
+__pycache__/
+*.pyc
+generated/*
+!generated/.gitkeep
+third_party/unitree_ros/
+data/demonstrations/*.csv
+data/processed/*
+!data/processed/.gitkeep
+models/*.pt
+models/*.npz
+models/training_report.json
+# third_party/H1_COMMIT.txt is intentionally tracked (pins the H1 description commit)
+*.mp4

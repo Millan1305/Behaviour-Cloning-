@@ -1,0 +1,7 @@
+# Installed into ./.venv (created with --system-site-packages so ROS 2's rclpy stays importable).
+# PyTorch (CPU build) is installed separately by install_dependencies.sh:
+#   pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+# Versions are my best choices for Python 3.12 / Ubuntu 24.04; they were NOT verified in a clean install.
+numpy==1.26.4        # matches Ubuntu 24.04 / ROS Jazzy system numpy; required (<2) by mediapipe 0.10.x
+mediapipe==0.10.21   # Pose estimation (pulls opencv-contrib-python, which provides cv2 + GUI preview)
+pytest>=7

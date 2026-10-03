@@ -40,6 +40,19 @@ New terminals: `source /opt/ros/jazzy/setup.bash && source ~/robot_cloning/insta
                                                           v
                          ros2_control (gz_ros2_control) in Gazebo Harmonic  ->  Unitree H1
 ```
+## 🎥 Behavior Cloning Demo
+
+The following demonstration shows the complete behavior cloning pipeline:
+
+| Human Demonstration | Unitree H1 Robot |
+|---|---|
+| <video src="/my_clip.mp4" controls width="100%"></video> | <video src="docs/videos/robot_copy.mp4" controls width="100%"></video> |
+| Human performs the action | H1 copies the demonstrated action |
+
+### Pipeline
+
+Human Action → MediaPipe Pose Detection → PyTorch Behavior Cloning → Joint Retargeting → ROS 2 → Gazebo → Unitree H1
+
 **What is learned:** `BCNet` (MLP, 12 pose features -> 8 robot joint targets + action-class head) trained with MSE + cross-entropy on (pose, robot-target) pairs, validated on held-out *episodes*.
 The robot-target labels come from kinematic retargeting of the demonstrated human pose (`common.retarget`).
 **Two modes:** *action mode* (keys 1-4) feeds a recorded demonstration's pose sequence through the network; *pose mode* (key 5, needs camera) feeds your live pose through the network so H1 mirrors you.

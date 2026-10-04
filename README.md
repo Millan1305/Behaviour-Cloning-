@@ -46,8 +46,14 @@ The following demonstration shows the complete behavior cloning pipeline:
 
 | Human Demonstration | Unitree H1 Robot |
 |---|---|
-| <video src="my_clip.mp4" controls width="100%"></video> | <video src="robot_copy.mp4" controls width="100%"></video> |
 | Human performs the action | H1 copies the demonstrated action |
+| [▶️ Watch Human Demo](./my_clip.mp4) | [▶️ Watch Robot Demo](./robot_copy.mp4) |
+
+### Human Demonstration
+[▶️ Play `my_clip.mp4`](./my_clip.mp4)
+
+### Robot Output
+[▶️ Play `robot_copy.mp4`](./robot_copy.mp4)
 
 ### Pipeline
 

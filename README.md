@@ -46,26 +46,46 @@ The following demonstration shows the complete behavior cloning pipeline:
 
 <table>
 <tr>
-<th>Human Demonstration</th>
-<th>Unitree H1 Robot</th>
+<th align="center">👤 Human Demonstration</th>
+<th align="center">🤖 Unitree H1 Robot</th>
 </tr>
+
 <tr>
 <td align="center">
 
-<video src="./my_clip.mp4" controls width="400"></video>
+<a href="./my_clip.mp4">
+<img src="./human_demo.gif" width="400">
+</a>
 
-**Human performs the action**
+<br>
+
+<a href="./my_clip.mp4">▶️ Watch Human Demo</a>
 
 </td>
+
 <td align="center">
 
-<video src="./robot_copy.mp4" controls width="400"></video>
+<a href="./robot_copy.mp4">
+<img src="./robot_demo.gif" width="400">
+</a>
 
-**H1 copies the demonstrated action**
+<br>
+
+<a href="./robot_copy.mp4">▶️ Watch Robot Demo</a>
 
 </td>
 </tr>
+
+<tr>
+<td align="center">
+Human performs the action
+</td>
+<td align="center">
+H1 copies the demonstrated action
+</td>
+</tr>
 </table>
+
 
 
 ### Pipeline

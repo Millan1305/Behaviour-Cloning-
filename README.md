@@ -44,16 +44,29 @@ New terminals: `source /opt/ros/jazzy/setup.bash && source ~/robot_cloning/insta
 
 The following demonstration shows the complete behavior cloning pipeline:
 
-| Human Demonstration | Unitree H1 Robot |
-|---|---|
-| Human performs the action | H1 copies the demonstrated action |
-| [▶️ Watch Human Demo](./my_clip.mp4) | [▶️ Watch Robot Demo](./robot_copy.mp4) |
+<table>
+<tr>
+<th>Human Demonstration</th>
+<th>Unitree H1 Robot</th>
+</tr>
+<tr>
+<td align="center">
 
-### Human Demonstration
-[▶️ Play `my_clip.mp4`](./my_clip.mp4)
+<video src="./my_clip.mp4" controls width="400"></video>
 
-### Robot Output
-[▶️ Play `robot_copy.mp4`](./robot_copy.mp4)
+**Human performs the action**
+
+</td>
+<td align="center">
+
+<video src="./robot_copy.mp4" controls width="400"></video>
+
+**H1 copies the demonstrated action**
+
+</td>
+</tr>
+</table>
+
 
 ### Pipeline
 
